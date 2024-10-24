@@ -203,6 +203,11 @@ p {
     height: auto; /* Altura automática para se ajustar ao conteúdo */
 }
 
+.post a{
+    color: #1a1a1ad5;
+    font-weight: 600;
+}
+
 /*! Seção vídeos */
 .videos {
     display: flex;
