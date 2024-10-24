@@ -16,86 +16,8 @@ html {
 body {
     background-color: #f5f5f5;
 }
-
-/* .cabecalho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #11212D;
-    padding: 10px 0;
-    gap: 30px;
-}
-
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    gap: 30px;
-}
-
-
-.menu a {
-    color: #f5f5f5ec;
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 8px 15px;
-    border-radius: 4px;
-    transition: 0.2s ease;
-}
-
-.menu a:hover {
-    color: #000;
-    background: #fff;
-}
-
-.btn {
-    background: transparent;
-    padding: 8px 15px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: 1px solid #fff;
-}
-
-.menu .btn:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-.btn.primary {
-    background-color: #ff9900;
-    border: none;
-}
-
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo a{
-    width: 56px;
-    height: 56px;
-}
-
-.logo img {
-    object-fit: contain;
-    width: 100%;
-}
-
-.logo a:hover{
-    content: url('../image/logo-amarela-clara.png'); 
-} */
-
-.hero {
+/*!Seção Banner Principal*/
+.banner {
     background-image: url('../image/banner-11.png');
     background-size: cover;
     background-position: center;
@@ -140,7 +62,7 @@ nav{
     align-items: center;
 }
 
-.hero h1 {
+.banner h1 {
     font-size: 3rem;
     color: #ffffffaf;
 }
@@ -167,14 +89,14 @@ nav{
     color: #1a1a1a;
 }
 
-/* Seção de cursos */
-.courses {
-    padding: 50px;
+/*! Seção de cursos */
+.cursos {
+    padding: 20px;
     text-align: center;
     background: url(../image/galaxia-noturna-paint.jpg);
 }
 
-.courses h2 {
+.cursos h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     color: #f5f5f5;
@@ -183,9 +105,9 @@ nav{
 .cards-container {
     display: flex; 
     flex-wrap: wrap; 
+    justify-content: center;
     gap: 20px; 
     padding: 20px;
-
 }
 
 .card {
@@ -194,9 +116,10 @@ nav{
     background-color: #021017;
     border: 1px solid #ddd; 
     border-radius: 10px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
     padding: 15px; 
     width: calc(33.33% - 20px); /* Largura do card em relação ao contêiner */
+    width: 31%;
     transition: transform 0.3s; /* Transição para efeitos de hover */
 }
 
@@ -251,10 +174,12 @@ p {
 }
 
 
-/* Seção de blog */
+/*! Seção de blog */
 .blog {
     background-color: #f5f5f5;
-    padding: 50px;
+    padding: 20px;
+    max-width: 1440px;
+    margin: 20px auto;
 }
 
 .blog h2 {
@@ -265,7 +190,7 @@ p {
 
 .blog-posts {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -274,15 +199,35 @@ p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 31%; /* Largura igual o iframe */
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
 }
 
-.post a {
-    color: #007BFF;
-    text-decoration: none;
+.post a{
+    color: #1a1a1ad5;
+    font-weight: 600;
 }
 
-/* Seção de FAQ */
+/*! Seção vídeos */
+.videos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1440px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.videos iframe {
+    width: 31%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*! Seção de perguntas frequentes */
 .faq {
     background-color: #ffffff;
     padding: 50px;
@@ -299,90 +244,31 @@ p {
     font-size: 1.5rem;
 }
 
-/* .footer {
-    background-color: #1a1a1a;
-    color: #ccc;
-    padding: 30px 0;
-    text-align: center;
-}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer-sections {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-section {
-    min-width: 200px;
-    margin: 20px 0;
-    text-align: left;
-}
-
-.redes-sociais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-width: 200px;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.redes-sociais img{
-    margin-bottom: 12px;
-}
-
-
-.footer-section h3 {
-    color: #fff;
-    margin-bottom: 15px;
-    font-size: 18px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-    color: #ccc;
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-    color: #f39c12;
-}
-
-.footer-copy {
-    margin-top: 30px;
-    font-size: 14px;
-} */
-
-
+/*! Responsividade */
 @media(max-width: 768px){
-    .hero{
+    .banner{
         justify-content: flex-start;
         height: 370px;
     }
-    .hero h1{
+    .banner h1{
         font-size: 2rem;
         margin-top: 40px;
     }
-    .courses h2{
+    .cursos h2{
         font-size: 1.5rem;
     }
     h3{
         font-size: 16px;
+    }
+    .videos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videos iframe {
+        width: 100%;
+        max-width: 560px; /* largura máxima em dispositivos móveis */
     }
 }
 
@@ -433,6 +319,7 @@ p {
 
     .post{
         width: 80%;
+        min-height: 200px;
     }
 }
 
@@ -440,9 +327,6 @@ p {
     .menu a{
         font-size: 11px;
         font-weight: 600;
-    }
-    .card{
-        width: 100%;
     }
     .post{
         width: 100%;
