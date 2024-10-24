@@ -92,7 +92,7 @@ body {
 
 /* Seção de cursos */
 .courses {
-    padding: 50px;
+    padding: 20px;
     text-align: center;
     background: url(../image/galaxia-noturna-paint.jpg);
 }
@@ -177,7 +177,9 @@ p {
 /* Seção de blog */
 .blog {
     background-color: #f5f5f5;
-    padding: 50px;
+    padding: 20px;
+    max-width: 1440px;
+    margin: 20px auto;
 }
 
 .blog h2 {
@@ -188,7 +190,7 @@ p {
 
 .blog-posts {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -197,22 +199,18 @@ p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 31%; /* Mantemos 31% */
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
 }
 
-.post a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-
-/* Seção videos */
+/* Seção vídeos */
 .videos {
     display: flex;
     justify-content: space-between;
-    gap: 22px;
+    gap: 20px;
     max-width: 1440px;
     margin: 20px auto;
+    padding: 20px;
 }
 
 .videos iframe {
@@ -221,6 +219,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 
 /* Seção de perguntas frequentes */
@@ -315,6 +314,7 @@ p {
 
     .post{
         width: 80%;
+        min-height: 200px;
     }
 }
 
