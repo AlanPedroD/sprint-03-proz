@@ -16,9 +16,8 @@ html {
 body {
     background-color: #f5f5f5;
 }
-
-
-.hero {
+/*!Seção Banner Principal*/
+.banner {
     background-image: url('../image/banner-11.png');
     background-size: cover;
     background-position: center;
@@ -63,7 +62,7 @@ body {
     align-items: center;
 }
 
-.hero h1 {
+.banner h1 {
     font-size: 3rem;
     color: #ffffffaf;
 }
@@ -90,14 +89,14 @@ body {
     color: #1a1a1a;
 }
 
-/* Seção de cursos */
-.courses {
+/*! Seção de cursos */
+.cursos {
     padding: 20px;
     text-align: center;
     background: url(../image/galaxia-noturna-paint.jpg);
 }
 
-.courses h2 {
+.cursos h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     color: #f5f5f5;
@@ -175,7 +174,7 @@ p {
 }
 
 
-/* Seção de blog */
+/*! Seção de blog */
 .blog {
     background-color: #f5f5f5;
     padding: 20px;
@@ -200,11 +199,11 @@ p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 31%; /* Mantemos 31% */
+    width: 31%; /* Largura igual o iframe */
     height: auto; /* Altura automática para se ajustar ao conteúdo */
 }
 
-/* Seção vídeos */
+/*! Seção vídeos */
 .videos {
     display: flex;
     justify-content: space-between;
@@ -223,7 +222,7 @@ p {
 
 
 
-/* Seção de perguntas frequentes */
+/*! Seção de perguntas frequentes */
 .faq {
     background-color: #ffffff;
     padding: 50px;
@@ -241,17 +240,17 @@ p {
 }
 
 
-
+/*! Responsividade */
 @media(max-width: 768px){
-    .hero{
+    .banner{
         justify-content: flex-start;
         height: 370px;
     }
-    .hero h1{
+    .banner h1{
         font-size: 2rem;
         margin-top: 40px;
     }
-    .courses h2{
+    .cursos h2{
         font-size: 1.5rem;
     }
     h3{
