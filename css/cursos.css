@@ -85,9 +85,9 @@ body {
 }
 
 .button:hover{
-    background-color: #f5f5f5;
-    color: #1a1a1a;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
 }
+
 
 /*! Seção de cursos */
 .cursos {
@@ -224,7 +224,6 @@ p {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-
 
 
 /*! Seção de perguntas frequentes */
