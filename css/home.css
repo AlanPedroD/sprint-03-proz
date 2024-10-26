@@ -1,10 +1,12 @@
+body{
+  background: url(/image/galaxia-noturna.jpg);
+  background-size: cover;
+}
 /*banner*/
 .banner-image{
   position: relative;
-  background: url(/image/666.jpeg) no-repeat center;
-  background-size: cover;
   height: 400px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .container-m{
@@ -13,14 +15,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
+  color: #d6dcde;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .container-m h1{
   margin: 0;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .container-m h1 span{
@@ -53,7 +55,15 @@
 .wrapper {
   padding: 10px 10%;
 }
-
+.wrapper h2{
+  margin: 30px;
+  color: #e8e9eb;
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 4px;
+  margin-left: 30%;
+  font-weight: 600;
+}
 #card-area {
   padding: 50px 0;
 }
@@ -98,12 +108,13 @@
 }
 
 .overlay h3 {
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 5px;
   margin-top: 80%;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 30px;
   letter-spacing: 2px;
+  color: #e2e8ef;
 }
 
 .overlay a {
@@ -126,5 +137,22 @@
 }
 /*fim-cards*/
 
-
-
+/*seçao */
+.about{
+  margin: 20px;
+	padding: 40px 10%;
+	text-align: center;
+  background-color: #96a4aa;
+  margin-bottom: 20px;
+  font-weight: 700;
+  border: 2px solid #c3c0c3db;
+	box-shadow: 0 0 30px #c7c4c4f1;
+}
+.about p{
+  color: #0a1335;
+}
+.title{
+  color: #d6dcde;
+  margin: 20px;
+}
+/*seção */
