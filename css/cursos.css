@@ -16,6 +16,7 @@ html {
 body {
     background-color: #f5f5f5;
 }
+
 /*!Seção Banner Principal*/
 .banner {
     background-image: url('../image/banner-11.png');
@@ -82,12 +83,13 @@ body {
     font-weight: 600;
     text-align: center;
     margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
 }
 
 .button:hover{
-    background-color: #f5f5f5;
-    color: #1a1a1a;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
 }
+
 
 /*! Seção de cursos */
 .cursos {
@@ -114,7 +116,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #021017;
-    border: 1px solid #ddd; 
     border-radius: 10px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
     padding: 15px; 
@@ -150,12 +151,12 @@ p {
 }
 
 .card h3{
-    color: #2BDEFD;
+    color: #2bddfdd3;
 }
 
 .card p{
     margin-bottom: 10px;
-    color: #f5f5f5;
+    color: #555;
 }
 
 .card a {
@@ -164,13 +165,13 @@ p {
     display: inline-block;
     align-self: center;
     margin-top: auto;
-    padding: 8px 30px;
-    border-radius: 4px;
+    padding: 10px 30px;
+    border-radius: 6px;
     text-transform: uppercase;
     font-weight: bold;
-    border: 1px solid #fff;
-    color: #f5f5f5;
-    background-color: rgba(0,0,0,.30);
+    background-color: rgba(0,0,0,.60);
+    color: #ffffffa1;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
 }
 
 
@@ -204,8 +205,9 @@ p {
 }
 
 .post a{
-    color: #1a1a1ad5;
     font-weight: 600;
+    color: #1f7699bb;
+    letter-spacing: 1.5;
 }
 
 /*! Seção vídeos */
@@ -226,22 +228,24 @@ p {
 }
 
 
-
 /*! Seção de perguntas frequentes */
-.faq {
+.perguntas {
     background-color: #ffffff;
     padding: 50px;
     text-align: center;
 }
-.faq h2 {
+.perguntas h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
 }
-.faq-item {
+.pergunta-item {
     margin-bottom: 20px;
 }
-.faq-item h3 {
+.pergunta-item h3 {
     font-size: 1.5rem;
+}
+.pergunta-item p{
+    color: #363636;
 }
 
 
@@ -274,33 +278,6 @@ p {
 
 
 @media(max-width: 680px){
-    .cabecalho{
-        flex-direction: column;
-        justify-content: center;
-        gap: 12px;
-    }
-    .menu{
-        padding: 16px 0;
-        gap: 12px;
-    }
-    .menu li:nth-child(-n+3) a{
-        padding: 0;
-    }
-    .redes-sociais{
-        flex-direction: row;
-    }
-    .footer-sections{
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-section{
-        text-align: center;
-    }
-    .redes-sociais img{
-        margin-right: 10px;
-        margin-bottom: 0;
-       }
     .cards-container{
         flex-direction: column;
         justify-content: center;
@@ -324,18 +301,8 @@ p {
 }
 
 @media(max-width: 426px){
-    .menu a{
-        font-size: 11px;
-        font-weight: 600;
-    }
     .post{
         width: 100%;
     }
 
-}
-
-@media(max-width: 336px){
-    .menu a{
-        font-size: 10px;
-    }
 }

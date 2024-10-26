@@ -9,7 +9,7 @@
 }
 
 
-
+/*! Cabeçalho */
 .cabecalho {
     display: flex;
     justify-content: center;
@@ -90,8 +90,7 @@ nav{
 }
 
 
-
-
+/*! Rodapé */
 .footer {
     background-color: #1a1a1a;
     /* color: #ccc; */
@@ -116,23 +115,6 @@ nav{
     margin: 20px 0;
     text-align: left;
 }
-
-/* .redes-sociais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-width: 200px;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.redes-sociais img{
-    max-width: 30px;
-    height: auto;
-    margin-bottom: 12px;
-} */
-
 
 .footer-section h3 {
     color: #fff;
@@ -206,7 +188,7 @@ nav{
 }
 
 
-
+/*! Responsividade */
 @media(max-width: 680px){
     .cabecalho{
         flex-direction: column;
